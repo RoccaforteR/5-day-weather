@@ -5,7 +5,7 @@ function getWeather() {
     const weatherContainer = document.getElementById('weather-container');
     weatherContainer.innerHTML = '';
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=${apiKey}`)
         .then(response => response.json())
         .then(data => {
             const curWeather = data.weather[0].main;
@@ -42,7 +42,7 @@ function getWeather() {
         })
         .catch(error => console.log('Error fetching current weather data:', error));
 
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&cnt=5&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&cnt=5&appid=${apiKey}`)
         .then(response => response.json())
         .then(data => {
             const forecasts = data.list;
