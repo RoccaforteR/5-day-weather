@@ -1,0 +1,20 @@
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.weather-card {
+    flex-basis: 20%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.weather-card h2 {
+    margin-bottom: 10px;
+}
