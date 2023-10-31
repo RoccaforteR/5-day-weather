@@ -22,7 +22,7 @@ function getWeather() {
             const curWeatherElement = document.createElement('h2');
             curWeatherElement.textContent = `Current Weather: ${curWeather}`;
             const curTemperatureElement = document.createElement('p');
-            curTemperatureElement.textContent = `Current Temperature: ${curTemperature} °C`;
+            curTemperatureElement.textContent = `Current Temperature: ${curTemperature} °F`;
             const curWindElement = document.createElement('p');
             curWindElement.textContent = `Wind Speed: ${curWindSpeed} m/s`;
             const curHumidityElement = document.createElement('p');
@@ -60,7 +60,7 @@ function getWeather() {
                 const dateElement = document.createElement('h2');
                 dateElement.textContent = date.toDateString();
                 const tempElement = document.createElement('p');
-                tempElement.textContent = `Temperature: ${temperature} °C`;
+                tempElement.textContent = `Temperature: ${temperature} °F`;
                 const descElement = document.createElement('p');
                 descElement.textContent = `Description: ${weatherDescription}`;
                 const iconElement = document.createElement('img');
